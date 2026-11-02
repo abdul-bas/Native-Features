@@ -1,17 +1,46 @@
-# native_features
+# Native Features
 
-A new Flutter project.
+A Flutter application that presents native device features in a modular, organized interface. The project separates feature data, shared styling, and reusable UI components to keep the codebase easy to maintain and extend.
+
+## Project Structure
+
+```text
+lib/
+├── core/
+│   └── constants/
+│       └── app_colors.dart
+├── data/
+│   └── datasources/
+│       └── native/
+│           └── native_features.dart
+├── presentation/
+│   ├── screens/
+│   │   └── home_page.dart
+│   └── widgets/
+│       ├── header.dart
+│       ├── info_note.dart
+│       ├── module_grid.dart
+│       ├── module_row.dart
+│       └── section_label.dart
+└── main.dart
+
+## Architecture Overview
+
+- **Core:** Contains shared application constants, including color definitions.
+- **Data:** Holds the native-feature data source.
+- **Presentation:** Contains the home screen and reusable widgets used to display feature modules.
+- **Main:** Application entry point.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart SDK
+- An IDE such as Android Studio or Visual Studio Code
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### 1. Clone the Repository
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone <repository-url>
+cd <project-directory>
